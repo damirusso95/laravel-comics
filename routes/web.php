@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// rotta / risponde con vista home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// rotta /home risponde con vista home
+Route::get('/home', function () {
+    return view('home');
 });
