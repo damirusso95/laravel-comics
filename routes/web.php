@@ -21,5 +21,15 @@ Route::get('/', function () {
 
 // rotta /home risponde con vista home
 Route::get('/home', function () {
-    return view('home');
+    
+// array associativo
+    $data = [
+         "msg0" => "sto",
+         "msg1" => "eseguendo",
+         "msg2" => "un test"
+
+
+    ];
+
+    return view('home', $data);
 });

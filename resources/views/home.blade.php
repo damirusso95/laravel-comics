@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>prova risponde alle rotte</h1>
+    <h1>Benvenuto</h1>
+    <h2>{{ $msg0 }}</h2>
+    <h2>{{ $msg1 }}</h2>
+    <h2>{{ $msg2 }}</h2>
+
 </body>
 </html>
