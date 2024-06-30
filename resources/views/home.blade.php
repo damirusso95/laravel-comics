@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>home</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Benvenuto</h1>
-    <h2>{{ $msg0 }}</h2>
-    <h2>{{ $msg1 }}</h2>
-    <h2>{{ $msg2 }}</h2>
+    
+    <div class="comics-container">
+        @foreach ($comics as $comic)
+            <div class="comic-card">
+                <h2>{{ $comic['title'] }}</h2>
+                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <p>{{ $comic['description'] }}</p>
+                <p><strong>Prezzo:</strong> {{ $comic['price'] }}</p>
+                <p><strong>Serie:</strong> {{ $comic['series'] }}</p>
+                <p><strong>Data di vendita:</strong> {{ $comic['sale_date'] }}</p>
+                <p><strong>Tipo:</strong> {{ $comic['type'] }}</p>
+            </div>
+        @endforeach
 
 </body>
 </html>

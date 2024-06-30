@@ -32,5 +32,12 @@ Route::get('/home', function () {
     // ];
     $data = config("store");
 
-    return view('home', $data);
+    return view('home', ['comics' => $data]);
 });
+
+// rotta /about risponde con vista home
+Route::get('/about', function () {
+        $data = config("store");
+    
+        return view('home', ['comics' => $data]);
+    });
