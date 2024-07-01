@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Benvenuto</h1>
+    @include('header')
     
     <div class="comics-container">
         @foreach ($comics as $comic)

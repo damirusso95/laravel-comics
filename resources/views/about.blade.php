@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    @include('header')
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p>Doloremque, quidem ipsam accusamus officiis fugiat vitae mollitia magni corporis, tempore optio ullam voluptatum quas excepturi nesciunt tenetur. Iure laudantium in harum?</p>
 </body>
 </html>

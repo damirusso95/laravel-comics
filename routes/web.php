@@ -19,7 +19,7 @@ Route::get('/', function () {
     $data = config("store");
     return view('home', ['comics' => $data]);
     
-});
+})->name("home");
 
 // rotta /home risponde con vista home
 Route::get('/home', function () {
@@ -41,5 +41,5 @@ Route::get('/home', function () {
 Route::get('/about', function () {
         $data = config("store");
     
-        return view('home', ['comics' => $data]);
-    });
+        return view('about', ['comics' => $data]);
+    })->name("about");
