@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 // rotta / risponde con vista home
 Route::get('/', function () {
-    return view('home');
+    $data = config("store");
+    return view('home', ['comics' => $data]);
+    
 });
 
 // rotta /home risponde con vista home
