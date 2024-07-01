@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>Benvenuto</h1>
-    @include('header')
-    
-    <div class="comics-container">
-        @foreach ($comics as $comic)
-            <div class="comic-card">
-                <h2>{{ $comic['title'] }}</h2>
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                <p>{{ $comic['description'] }}</p>
-                <p><strong>Prezzo:</strong> {{ $comic['price'] }}</p>
-                <p><strong>Serie:</strong> {{ $comic['series'] }}</p>
-                <p><strong>Data di vendita:</strong> {{ $comic['sale_date'] }}</p>
-                <p><strong>Tipo:</strong> {{ $comic['type'] }}</p>
-            </div>
-        @endforeach
+@extends('layouts.app')
 
-</body>
-</html>
+@section('content')
+    <h1>Benvenuto, dai un'occhiata ai nostri fumetti</h1>
+    <h2>io nel frattempo testo il tamplate</h2>    
+@endsection

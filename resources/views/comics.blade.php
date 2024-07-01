@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style.css">
-    <title>about</title>
+    <title>comics</title>
 </head>
 <body>
     @include('header')
-    <h1>Informazioni sui nostri fumetti</h1>
     <div class="comics-container">
         @foreach ($comics as $comic)
             <div class="comic-card">

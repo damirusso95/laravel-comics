@@ -8,9 +8,13 @@
     <title>Layout base</title>
 </head>
 <body>
+    
+
+
     <div class="container">
         {{-- segnaposto --}}
         @yield('content')
+        @include('header')
     </div>
 </body>
 </html>
