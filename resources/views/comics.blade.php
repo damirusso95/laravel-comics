@@ -14,11 +14,6 @@
             <div class="comic-card">
                 <h2>{{ $comic['title'] }}</h2>
                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                <p>{{ $comic['description'] }}</p>
-                <p><strong>Prezzo:</strong> {{ $comic['price'] }}</p>
-                <p><strong>Serie:</strong> {{ $comic['series'] }}</p>
-                <p><strong>Data di vendita:</strong> {{ $comic['sale_date'] }}</p>
-                <p><strong>Tipo:</strong> {{ $comic['type'] }}</p>
             </div>
         @endforeach
     </div>
